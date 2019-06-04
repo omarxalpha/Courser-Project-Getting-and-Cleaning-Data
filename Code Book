@@ -1,0 +1,22 @@
+This repo contains an R script called 'run_analysis.R', in which the following tasks are performed.
+
+#Merges the training and the test sets to create one data set#
+
+-First, this script allows you to download and decompress the necessary data to generate the "UCI HAR DATASET" folder.
+-Second, once the folder has been decompressed, we call all the bases and merge them into an ordered base
+
+#Extracts only the measurements on the mean and standard deviation for each measurement.
+
+-Third, using the dplyr package, we only select the variables that contain "mean" and "std"
+
+#Uses descriptive activity names to name the activities in the data set
+
+-Fourth, we use the second column of the base called "activities_labels" to make a description of the activities of the ordered base "Tidy"
+
+#Appropriately labels the data set with descriptive variable names.
+
+- fifth, change the descprición of each variable, eliminating its avrebiación and using labels more accurate
+
+#From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+-Finally, with the dplyr package we create a table with the required specifications. We store this package in a separate file .txt format
