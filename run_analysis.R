@@ -54,7 +54,7 @@ Tidy <- base_complete %>%
 
 #Change the description of the activities
 
-TidyData$code <- activities_labels[TidyData$code, 2]
+Tidy$code <- activities_labels[Tidy$code, 2]
 names(Tidy)[2] = "activity"
 
 #****************************************************#
